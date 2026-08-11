@@ -1,1 +1,153 @@
+:root {
+  --forest-deep: #16251c;
+  --forest: #294332;
+  --moss: #657153;
+  --sage: #9aa58b;
 
+  --bark: #5b4635;
+  --earth: #80664d;
+
+  --charcoal: #242724;
+  --black: #111411;
+
+  --paper: #eee9dc;
+  --cream: #f5f1e7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  background: var(--black);
+  color: var(--paper);
+
+  font-family: Georgia, serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 24px 8%;
+
+  background: var(--forest-deep);
+  border-bottom: 1px solid var(--bark);
+}
+
+header h1 {
+  margin: 0;
+
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: var(--paper);
+  text-decoration: none;
+
+  font-family: Arial, sans-serif;
+}
+
+nav a:hover {
+  color: var(--sage);
+}
+
+.hero {
+  min-height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 8%;
+
+  background: linear-gradient(
+    135deg,
+    var(--black),
+    var(--forest-deep)
+  );
+}
+
+.hero h2 {
+  max-width: 800px;
+
+  margin: 10px 0;
+
+  font-size: clamp(3rem, 7vw, 6rem);
+  line-height: 0.95;
+}
+
+.hero p {
+  max-width: 650px;
+
+  font-size: 1.2rem;
+  line-height: 1.7;
+
+  color: var(--sage);
+}
+
+.eyebrow {
+  font-family: Arial, sans-serif;
+
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+  color: var(--earth);
+}
+
+.button {
+  width: fit-content;
+
+  margin-top: 24px;
+  padding: 14px 24px;
+
+  background: var(--moss);
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 4px;
+}
+
+.featured {
+  padding: 80px 8%;
+
+  background: var(--paper);
+  color: var(--charcoal);
+}
+
+.featured h2 {
+  max-width: 800px;
+
+  font-size: 3rem;
+}
+
+.featured p {
+  max-width: 650px;
+
+  line-height: 1.7;
+}
+
+.featured a {
+  color: var(--forest);
+  font-weight: bold;
+}
+
+footer {
+  padding: 50px 8%;
+
+  background: var(--forest-deep);
+  color: var(--sage);
+
+  border-top: 1px solid var(--bark);
+}
