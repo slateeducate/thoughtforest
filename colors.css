@@ -71,10 +71,10 @@ nav a:hover {
 
   padding: 8%;
 
-  background: linear-gradient(
-    135deg,
-    var(--black),
-    var(--forest-deep)
+  background: url("images/forest-night.jpg")
+    center/cover no-repeat;
+    min-height:100vh;
+    position: relative;
   );
 }
 
