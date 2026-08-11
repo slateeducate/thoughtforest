@@ -143,6 +143,119 @@ nav a:hover {
   font-weight: bold;
 }
 
+.publications {
+  padding: 90px 8%;
+  background: var(--near-black);
+}
+
+.section-heading {
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.section-heading h2 {
+  margin: 8px 0 18px;
+
+  font-size: clamp(2.4rem, 5vw, 4rem);
+}
+
+.section-heading > p:last-child {
+  color: var(--sage);
+  line-height: 1.7;
+}
+
+.article-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 380px;
+
+  padding: 32px;
+
+  background: var(--forest-deep);
+
+  border: 1px solid var(--bark);
+  border-radius: 8px;
+}
+
+.article-topic {
+  margin: 0 0 20px;
+
+  color: var(--sage);
+
+  font-family: Arial, sans-serif;
+
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.article-card h3 {
+  margin: 0 0 18px;
+
+  font-size: 1.8rem;
+  line-height: 1.15;
+}
+
+.article-description {
+  margin: 0;
+
+  color: var(--sage);
+
+  line-height: 1.7;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: auto;
+  padding-top: 30px;
+
+  color: var(--earth);
+
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+}
+
+.article-meta span:not(:last-child)::after {
+  content: "•";
+  margin-left: 10px;
+}
+
+.article-card > a {
+  margin-top: 18px;
+
+  color: var(--paper);
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+.article-card > a:hover {
+  color: var(--sage);
+}
+
+@media (max-width: 850px) {
+
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
 footer {
   padding: 50px 8%;
 
